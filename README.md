@@ -12,6 +12,7 @@
 - **时长**：90 分钟
 - **形式**：讲解 + 场景拆解 + 本地 AI Skill 实操
 - **主实操**：行政审批预审助手
+- **扩展能力**：Codex Record & Replay 脱敏演示复盘
 - **发布站点**：[GitHub Pages](https://aicode-nexus.github.io/ai-first-administration/)
 
 ## 学习入口
@@ -20,7 +21,7 @@
 |---|---|
 | [课程学习中心](demo/src/app/learn/) | Next.js 静态课程站源码 |
 | [专题课讲义](AI-First行政思维转型/final-content.md) | 完整 90 分钟讲义 |
-| [实操案例](实操案例/行政审批预审/) | 行政审批预审演示材料 |
+| [实操案例](实操案例/行政审批预审/) | 行政审批预审演示材料，含 Record & Replay 扩展 |
 | [配套 Skill](skills/admin-approval-preflight/) | 本地 AI 预审工作流 |
 
 ## 90 分钟课程结构
@@ -42,7 +43,8 @@ flowchart LR
     B --> C[AI 参与整理、检查、生成]
     C --> D[人工判断与审批]
     D --> E[标准化交付]
-    E --> F[沉淀为可复用 Skill]
+    E --> F[Record & Replay 复盘]
+    F --> G[沉淀为可复用 Skill]
 ```
 
 ## 快速开始
