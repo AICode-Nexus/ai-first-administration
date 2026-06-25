@@ -30,3 +30,13 @@ test('LessonContent renders markdown images as course illustrations', () => {
   assert.match(source, /siteBasePath = .*\/ai-first-administration/)
   assert.match(source, /src=\{resolveLessonImageSrc\(src\)\}/)
 })
+
+test('LessonContent uses light code block surfaces', () => {
+  const filePath = path.join(process.cwd(), 'src/components/learn/lesson-content.tsx')
+  const source = fs.readFileSync(filePath, 'utf8')
+
+  assert.match(source, /bg-slate-50/)
+  assert.match(source, /text-slate-800/)
+  assert.doesNotMatch(source, /bg-\[#0d1117\]/)
+  assert.doesNotMatch(source, /text-\[#e6edf3\]/)
+})

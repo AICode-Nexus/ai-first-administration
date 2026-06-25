@@ -258,12 +258,12 @@ export function LessonContent({ content }: { content: string }) {
               return (
                 <div className="not-prose group relative my-4">
                   {lang && (
-                    <div className="absolute right-3 top-3 rounded bg-slate-700 px-2 py-0.5 text-xs text-slate-400 opacity-0 transition-opacity group-hover:opacity-100">
+                    <div className="absolute right-3 top-3 rounded border border-slate-200 bg-white/90 px-2 py-0.5 text-xs text-slate-500 opacity-0 shadow-sm transition-opacity group-hover:opacity-100">
                       {lang}
                     </div>
                   )}
                   <pre
-                    className="overflow-x-auto rounded-lg bg-[#0d1117] p-4 text-sm leading-6 text-[#e6edf3]"
+                    className="overflow-x-auto rounded-lg border border-slate-200 bg-slate-50 p-4 text-sm leading-6 text-slate-800 shadow-sm"
                     {...props}
                   >
                     {children}
