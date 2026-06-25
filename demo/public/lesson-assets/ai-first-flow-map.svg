@@ -1,0 +1,150 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#eef6ff"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="260" y1="250" x2="1340" y2="680" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0f766e"/>
+      <stop offset="0.55" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#1e3a8a" flood-opacity="0.12"/>
+    </filter>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.06 0 0 0 0 0.65 0 0 0 0 0.58 0 0 0 0.35 0"/>
+      <feBlend in2="SourceGraphic" mode="normal"/>
+    </filter>
+  </defs>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; letter-spacing: 0; }
+    .title { font-size: 40px; font-weight: 800; fill: #0f172a; }
+    .subtitle { font-size: 22px; font-weight: 500; fill: #475569; }
+    .lane { font-size: 24px; font-weight: 800; fill: #0f172a; }
+    .label { font-size: 23px; font-weight: 750; fill: #0f172a; }
+    .small { font-size: 17px; font-weight: 600; fill: #64748b; }
+    .white { fill: #ffffff; }
+  </style>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <path d="M1210 -40C1400 40 1535 160 1600 320V0H1210Z" fill="#dbeafe" opacity="0.65"/>
+  <path d="M0 650C170 600 325 640 475 790C560 875 690 910 850 895H0V650Z" fill="#e0f2fe" opacity="0.55"/>
+  <g opacity="0.28">
+    <circle cx="60" cy="120" r="3" fill="#93c5fd"/>
+    <circle cx="92" cy="120" r="3" fill="#93c5fd"/>
+    <circle cx="124" cy="120" r="3" fill="#93c5fd"/>
+    <circle cx="156" cy="120" r="3" fill="#93c5fd"/>
+    <circle cx="60" cy="152" r="3" fill="#93c5fd"/>
+    <circle cx="92" cy="152" r="3" fill="#93c5fd"/>
+    <circle cx="124" cy="152" r="3" fill="#93c5fd"/>
+    <circle cx="156" cy="152" r="3" fill="#93c5fd"/>
+    <circle cx="60" cy="184" r="3" fill="#93c5fd"/>
+    <circle cx="92" cy="184" r="3" fill="#93c5fd"/>
+    <circle cx="124" cy="184" r="3" fill="#93c5fd"/>
+    <circle cx="156" cy="184" r="3" fill="#93c5fd"/>
+  </g>
+
+  <text x="96" y="82" class="title">AI First 行政工作流</text>
+  <text x="96" y="122" class="subtitle">同一个高频任务：先拆解、再预审、再由人确认，最后沉淀为可复用模板或 Skill</text>
+
+  <g filter="url(#softShadow)">
+    <circle cx="170" cy="450" r="78" fill="#ffffff" stroke="#dbeafe" stroke-width="2"/>
+    <rect x="122" y="402" width="76" height="96" rx="12" fill="#eff6ff" stroke="#93c5fd" stroke-width="4"/>
+    <path d="M144 430H176M144 455H190M144 480H170" stroke="#60a5fa" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="205" cy="500" r="24" fill="#fbbf24"/>
+    <path d="M194 500L202 508L217 490" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="170" y="557" text-anchor="middle" class="label">接到任务</text>
+  <text x="170" y="586" text-anchor="middle" class="small">材料、申请、答疑、表格</text>
+
+  <path d="M240 452C315 452 300 250 380 250H470" stroke="#94a3b8" stroke-width="5" stroke-linecap="round" stroke-dasharray="12 14"/>
+  <path d="M240 452C315 452 300 650 380 650H470" stroke="#0f766e" stroke-width="7" stroke-linecap="round"/>
+
+  <rect x="380" y="132" width="180" height="42" rx="21" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="470" y="161" text-anchor="middle" class="lane">传统方式</text>
+
+  <g opacity="0.62" filter="url(#softShadow)">
+    <rect x="470" y="175" width="140" height="140" rx="22" fill="#ffffff" stroke="#e2e8f0"/>
+    <path d="M520 215C540 205 558 224 548 242C568 238 580 260 566 275C546 295 515 275 503 260C486 238 500 222 520 215Z" fill="#e2e8f0"/>
+    <path d="M500 265L560 225M510 225L570 265" stroke="#94a3b8" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="590" cy="255" r="7" fill="#fbbf24"/>
+
+    <rect x="660" y="175" width="140" height="140" rx="22" fill="#ffffff" stroke="#e2e8f0"/>
+    <rect x="700" y="218" width="72" height="58" rx="8" fill="#dbeafe" stroke="#93c5fd" stroke-width="3"/>
+    <path d="M714 236H754M714 254H744" stroke="#60a5fa" stroke-width="5" stroke-linecap="round"/>
+    <path d="M690 234L712 250L690 266" stroke="#94a3b8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="850" y="175" width="140" height="140" rx="22" fill="#ffffff" stroke="#e2e8f0"/>
+    <circle cx="920" cy="230" r="22" fill="#cbd5e1"/>
+    <path d="M888 276C895 250 945 250 952 276" fill="#e2e8f0"/>
+    <path d="M912 196C934 184 952 202 940 220" stroke="#94a3b8" stroke-width="5" stroke-linecap="round"/>
+
+    <rect x="1040" y="175" width="140" height="140" rx="22" fill="#ffffff" stroke="#e2e8f0"/>
+    <rect x="1080" y="215" width="65" height="78" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="3"/>
+    <circle cx="1146" cy="278" r="24" fill="none" stroke="#1d4ed8" stroke-width="6"/>
+    <path d="M1164 296L1185 317" stroke="#1d4ed8" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <text x="540" y="346" text-anchor="middle" class="label">手工整理</text>
+  <text x="730" y="346" text-anchor="middle" class="label">反复沟通</text>
+  <text x="920" y="346" text-anchor="middle" class="label">经验判断</text>
+  <text x="1110" y="346" text-anchor="middle" class="label">难以复用</text>
+
+  <rect x="380" y="514" width="185" height="42" rx="21" fill="#ccfbf1" stroke="#99f6e4"/>
+  <text x="472" y="543" text-anchor="middle" class="lane">AI First 流程</text>
+  <g filter="url(#softShadow)">
+    <rect x="430" y="565" width="165" height="138" rx="22" fill="#ffffff" stroke="#dbeafe"/>
+    <rect x="462" y="602" width="92" height="64" rx="10" fill="#dbeafe"/>
+    <circle cx="488" cy="636" r="8" fill="#0f766e"/>
+    <circle cx="526" cy="618" r="8" fill="#2563eb"/>
+    <circle cx="542" cy="650" r="8" fill="#0f766e"/>
+    <path d="M488 636L526 618L542 650" stroke="#0f766e" stroke-width="4" stroke-linecap="round"/>
+
+    <rect x="675" y="565" width="165" height="138" rx="22" fill="#ffffff" stroke="#dbeafe"/>
+    <path d="M712 612L724 624L748 596" stroke="#0f766e" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M765 612H805M765 642H798" stroke="#93c5fd" stroke-width="8" stroke-linecap="round"/>
+    <path d="M712 655L724 667L748 639" stroke="#0f766e" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="920" y="565" width="165" height="138" rx="22" fill="#ffffff" stroke="#dbeafe"/>
+    <circle cx="1002" cy="618" r="32" fill="#99f6e4"/>
+    <path d="M952 670C963 632 1042 632 1053 670" fill="#ccfbf1"/>
+    <circle cx="1048" cy="646" r="24" fill="#0f766e"/>
+    <path d="M1038 647L1046 655L1060 638" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="1165" y="565" width="165" height="138" rx="22" fill="#ffffff" stroke="#dbeafe"/>
+    <rect x="1204" y="604" width="84" height="66" rx="12" fill="#dbeafe"/>
+    <path d="M1218 625H1268M1218 648H1252" stroke="#60a5fa" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="1295" cy="605" r="22" fill="#0f766e"/>
+    <path d="M1285 604L1293 612L1307 594" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="512" y="737" text-anchor="middle" class="label">拆任务</text>
+  <text x="512" y="766" text-anchor="middle" class="small">输入 / 标准 / 输出</text>
+  <text x="758" y="737" text-anchor="middle" class="label">AI 预审</text>
+  <text x="758" y="766" text-anchor="middle" class="small">提取、查缺、标风险</text>
+  <text x="1002" y="737" text-anchor="middle" class="label">人工确认</text>
+  <text x="1002" y="766" text-anchor="middle" class="small">判断、审批、负责</text>
+  <text x="1248" y="737" text-anchor="middle" class="label">标准交付</text>
+  <text x="1248" y="766" text-anchor="middle" class="small">摘要、清单、回复</text>
+
+  <path d="M595 634H670" stroke="#0f766e" stroke-width="7" stroke-linecap="round"/>
+  <path d="M840 634H915" stroke="#0f766e" stroke-width="7" stroke-linecap="round"/>
+  <path d="M1085 634H1160" stroke="#0f766e" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="635" cy="634" r="8" fill="#0f766e"/>
+  <circle cx="880" cy="634" r="8" fill="#0f766e"/>
+  <circle cx="1125" cy="634" r="8" fill="#0f766e"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="1370" y="398" width="155" height="205" rx="28" fill="#ffffff" stroke="#99f6e4" stroke-width="3"/>
+    <rect x="1413" y="445" width="74" height="58" rx="14" fill="url(#teal)" filter="url(#glow)"/>
+    <circle cx="1436" cy="470" r="8" fill="#ffffff"/>
+    <circle cx="1465" cy="455" r="8" fill="#ffffff"/>
+    <circle cx="1478" cy="486" r="8" fill="#ffffff"/>
+    <path d="M1436 470L1465 455L1478 486" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+    <path d="M1408 540H1438M1450 540H1480M1492 540H1514" stroke="#93c5fd" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="1512" cy="390" r="33" fill="#0f766e"/>
+    <path d="M1512 371L1519 386L1535 388L1523 399L1527 415L1512 406L1497 415L1501 399L1489 388L1505 386L1512 371Z" fill="#fbbf24"/>
+  </g>
+  <text x="1448" y="638" text-anchor="middle" class="label">沉淀为</text>
+  <text x="1448" y="670" text-anchor="middle" class="label">模板 / Skill</text>
+  <text x="1448" y="705" text-anchor="middle" class="small">下次直接复用</text>
+</svg>

@@ -361,7 +361,7 @@ export function LessonContent({ content }: { content: string }) {
               <img
                 {...props}
                 className="my-8 aspect-video w-full rounded-lg border border-slate-200 bg-slate-100 object-cover shadow-sm"
-                loading="lazy"
+                loading="eager"
                 src={resolveLessonImageSrc(src)}
                 alt={alt ?? ''}
               />

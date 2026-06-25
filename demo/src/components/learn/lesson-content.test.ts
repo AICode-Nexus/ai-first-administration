@@ -26,7 +26,7 @@ test('LessonContent renders markdown images as course illustrations', () => {
 
   assert.match(source, /img:\s*\(\{ src, alt, \.\.\.props \}\)\s*=>/)
   assert.match(source, /aspect-video w-full rounded-lg/)
-  assert.match(source, /loading="lazy"/)
+  assert.match(source, /loading="eager"/)
   assert.match(source, /siteBasePath = .*\/ai-first-administration/)
   assert.match(source, /src=\{resolveLessonImageSrc\(src\)\}/)
 })

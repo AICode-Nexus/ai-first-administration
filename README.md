@@ -37,15 +37,7 @@
 
 ## 核心观点
 
-```mermaid
-flowchart LR
-    A[传统行政执行] --> B[任务拆解]
-    B --> C[AI 参与整理、检查、生成]
-    C --> D[人工判断与审批]
-    D --> E[标准化交付]
-    E --> F[Record & Replay 复盘]
-    F --> G[沉淀为可复用 Skill]
-```
+![高频行政任务从提示词、模板、本地 Skill 演进为部门工作流](demo/public/lesson-assets/prompt-to-skill-workflow.svg)
 
 ## 快速开始
 
