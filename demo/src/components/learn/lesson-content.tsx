@@ -16,6 +16,25 @@ import remarkGfm from 'remark-gfm'
 // 生成唯一 ID
 let mermaidId = 0
 const generateId = () => `mermaid-${++mermaidId}`
+const siteBasePath = process.env.NODE_ENV === 'production' ? '/ai-first-administration' : ''
+
+function resolveLessonImageSrc(src?: string | Blob): string {
+  if (typeof src !== 'string' || /^(https?:|data:|blob:)/.test(src)) {
+    return typeof src === 'string' ? src : ''
+  }
+
+  const normalizedSrc = src.replace(/^(\.\.\/)+/, '/').replace(/^\.\/+/, '/')
+
+  if (normalizedSrc.startsWith('/')) {
+    if (siteBasePath && normalizedSrc.startsWith(siteBasePath)) {
+      return normalizedSrc
+    }
+
+    return `${siteBasePath}${normalizedSrc}`
+  }
+
+  return src
+}
 
 // Mermaid 渲染组件
 function MermaidBlock({ code }: { code: string }) {
@@ -343,7 +362,7 @@ export function LessonContent({ content }: { content: string }) {
                 {...props}
                 className="my-8 aspect-video w-full rounded-lg border border-slate-200 bg-slate-100 object-cover shadow-sm"
                 loading="lazy"
-                src={src ?? ''}
+                src={resolveLessonImageSrc(src)}
                 alt={alt ?? ''}
               />
             ),
