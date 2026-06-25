@@ -40,7 +40,7 @@ export default function LearnPage() {
           </div>
         </div>
         <img
-          src={`${assetBase}/lesson-assets/ai-first-workflow-shift.png`}
+          src={`${assetBase}/lesson-assets/ai-first-workflow-shift-labeled.svg`}
           alt=""
           className="aspect-video w-full rounded-lg border border-slate-200 object-cover shadow-sm"
         />

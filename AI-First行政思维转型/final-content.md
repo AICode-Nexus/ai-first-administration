@@ -2,7 +2,7 @@
 
 > **课程时长**: 90 分钟 | **对象**: 集团行政部门 | **形式**: 场景讲解 + 小组拆解 + 本地 AI Skill 实操
 
-![散乱行政材料被组织成 AI 预审工作流](../../lesson-assets/ai-first-admin-hero.png)
+![散乱行政材料被组织成 AI 预审工作流](../../lesson-assets/ai-first-admin-hero-labeled.svg)
 
 ---
 
@@ -80,7 +80,7 @@
 
 ### 今天的核心转变
 
-![从散乱手工处理转向结构化 AI First 流程](../../lesson-assets/ai-first-workflow-shift.png)
+![从散乱手工处理转向结构化 AI First 流程](../../lesson-assets/ai-first-workflow-shift-labeled.svg)
 
 ![AI First 工作流从任务进入、AI 预审、人工确认到可复用 Skill 的转变](../../lesson-assets/ai-first-flow-map.svg)
 
@@ -279,7 +279,7 @@ AI 可处理环节：
 
 ## Section 3：实操：行政审批预审 Skill（28分钟）
 
-![行政团队现场演示 AI Skill 预审结果](../../lesson-assets/admin-skill-workshop.png)
+![行政团队现场演示 AI Skill 预审结果](../../lesson-assets/admin-skill-workshop-labeled.svg)
 
 ### 3.1 实操目标
 
@@ -510,7 +510,7 @@ AI 先处理哪几步？
 
 ## Section 5：风险边界与人机分工（8分钟）
 
-![AI 预审与人工审批之间的责任边界](../../lesson-assets/human-ai-boundary.png)
+![AI 预审与人工审批之间的责任边界](../../lesson-assets/human-ai-boundary-labeled.svg)
 
 ### 5.1 行政 AI 的三层边界
 

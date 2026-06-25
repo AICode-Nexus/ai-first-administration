@@ -19,7 +19,7 @@ export default function Home() {
     <main className="min-h-screen bg-background">
       <section className="relative flex min-h-[92svh] items-center overflow-hidden">
         <img
-          src={`${assetBase}/lesson-assets/ai-first-admin-hero.png`}
+          src={`${assetBase}/lesson-assets/ai-first-admin-hero-labeled.svg`}
           alt=""
           className="absolute inset-0 h-full w-full object-cover"
         />
