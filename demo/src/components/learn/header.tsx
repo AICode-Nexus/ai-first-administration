@@ -88,9 +88,9 @@ export function Header({ searchEntries }: HeaderProps) {
 
           <Link href="/learn" className="flex items-center gap-2 md:gap-3">
             <svg
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
+              width="36"
+              height="36"
+              viewBox="0 0 36 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               className="shrink-0"
@@ -98,26 +98,35 @@ export function Header({ searchEntries }: HeaderProps) {
               focusable="false"
             >
               <defs>
-                <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style={{ stopColor: '#2563eb', stopOpacity: 1 }} />
-                  <stop offset="100%" style={{ stopColor: '#0f766e', stopOpacity: 1 }} />
+                <linearGradient id="brandMarkBg" x1="5" y1="4" x2="31" y2="32">
+                  <stop offset="0%" stopColor="#0f766e" />
+                  <stop offset="55%" stopColor="#2563eb" />
+                  <stop offset="100%" stopColor="#1e40af" />
+                </linearGradient>
+                <linearGradient id="brandMarkAccent" x1="9" y1="28" x2="28" y2="8">
+                  <stop offset="0%" stopColor="#fbbf24" />
+                  <stop offset="100%" stopColor="#67e8f9" />
                 </linearGradient>
               </defs>
+              <rect x="2" y="2" width="32" height="32" rx="9" fill="url(#brandMarkBg)" />
               <path
-                d="M8 10h16v4H8z"
-                stroke="url(#grad)"
-                strokeWidth="1.8"
-                strokeLinejoin="round"
-              />
-              <path d="M8 18h10" stroke="url(#grad)" strokeWidth="1.8" strokeLinecap="round" />
-              <path d="M8 23h8" stroke="url(#grad)" strokeWidth="1.8" strokeLinecap="round" />
-              <path
-                d="M21 19l2 2 4-5"
-                stroke="url(#grad)"
-                strokeWidth="1.8"
+                d="M8 27C12.5 15 14.75 9 17 9s4.5 6 9 18"
+                stroke="white"
+                strokeWidth="2.6"
                 strokeLinecap="round"
                 strokeLinejoin="round"
               />
+              <path d="M12.3 20.8h9.4" stroke="white" strokeWidth="2.4" strokeLinecap="round" />
+              <path
+                d="M22.5 10.5l2.2 2.2 4.6-5.3"
+                stroke="#d1fae5"
+                strokeWidth="2.2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <circle cx="8.5" cy="27" r="2.4" fill="url(#brandMarkAccent)" />
+              <circle cx="17" cy="9" r="2.4" fill="#eff6ff" />
+              <circle cx="25.5" cy="27" r="2.4" fill="#99f6e4" />
             </svg>
             <div>
               <div className="text-sm font-semibold">AI First 行政思维转型</div>

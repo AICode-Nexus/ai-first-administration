@@ -1,30 +1,20 @@
 <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    <linearGradient id="bg" x1="14" y1="10" x2="106" y2="110">
+      <stop offset="0%" stop-color="#0f766e" />
+      <stop offset="55%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1e40af" />
     </linearGradient>
-    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    <linearGradient id="accent" x1="26" y1="94" x2="94" y2="26">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#67e8f9" />
     </linearGradient>
   </defs>
-
-  <!-- 外圈装饰 -->
-  <circle cx="60" cy="60" r="54" stroke="url(#grad1)" stroke-width="2" opacity="0.3" fill="none"/>
-
-  <!-- 代码括号 < -->
-  <path d="M 38 45 L 28 60 L 38 75" stroke="url(#grad2)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-
-  <!-- 代码括号 > -->
-  <path d="M 82 45 L 92 60 L 82 75" stroke="url(#grad2)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-
-  <!-- AI 闪电符号 -->
-  <path d="M 60 35 L 52 60 L 68 60 L 60 85" stroke="url(#grad1)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-
-  <!-- 装饰圆点 -->
-  <circle cx="48" cy="48" r="2.5" fill="#3b82f6" opacity="0.8"/>
-  <circle cx="72" cy="48" r="2.5" fill="#8b5cf6" opacity="0.8"/>
-  <circle cx="48" cy="72" r="2.5" fill="#06b6d4" opacity="0.8"/>
-  <circle cx="72" cy="72" r="2.5" fill="#3b82f6" opacity="0.8"/>
+  <rect x="8" y="8" width="104" height="104" rx="30" fill="url(#bg)" />
+  <path d="M26 92C39.8 54 49.8 28 60 28C70.2 28 80.2 54 94 92" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M42 70H78" stroke="white" stroke-width="7" stroke-linecap="round" />
+  <path d="M79 34L87 42L104 23" stroke="#d1fae5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="26" cy="92" r="8" fill="url(#accent)" />
+  <circle cx="60" cy="28" r="8" fill="#eff6ff" />
+  <circle cx="94" cy="92" r="8" fill="#99f6e4" />
 </svg>
