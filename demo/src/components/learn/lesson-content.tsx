@@ -36,6 +36,27 @@ function resolveLessonImageSrc(src?: string | Blob): string {
   return src
 }
 
+type MarkdownNodeChild = {
+  type?: string
+  tagName?: string
+  value?: string
+}
+
+type MarkdownNode = {
+  children?: MarkdownNodeChild[]
+}
+
+function isImageOnlyParagraphNode(node?: MarkdownNode): boolean {
+  const meaningfulChildren =
+    node?.children?.filter((child) => !(child.type === 'text' && child.value?.trim() === '')) ?? []
+
+  return (
+    meaningfulChildren.length === 1 &&
+    meaningfulChildren[0].type === 'element' &&
+    meaningfulChildren[0].tagName === 'img'
+  )
+}
+
 // Mermaid 渲染组件
 function MermaidBlock({ code }: { code: string }) {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -203,11 +224,24 @@ export function LessonContent({ content }: { content: string }) {
                 </h3>
               )
             },
-            p: ({ children, ...props }) => (
-              <p className="text-foreground/90 mb-4 text-base leading-7" {...props}>
-                {children}
-              </p>
-            ),
+            p: ({ children, node, ...props }) => {
+              if (isImageOnlyParagraphNode(node as MarkdownNode | undefined)) {
+                return (
+                  <p
+                    className="not-prose my-8 overflow-x-auto rounded-lg border border-slate-200 bg-slate-100 shadow-sm"
+                    {...props}
+                  >
+                    {children}
+                  </p>
+                )
+              }
+
+              return (
+                <p className="text-foreground/90 mb-4 text-base leading-7" {...props}>
+                  {children}
+                </p>
+              )
+            },
             code: ({ className, children, ...props }) => {
               // 有 language- 或 hljs class 说明是块级代码（由 pre 处理容器样式）
               const isBlock = className?.includes('language-') || className?.includes('hljs')
@@ -360,7 +394,7 @@ export function LessonContent({ content }: { content: string }) {
             img: ({ src, alt, ...props }) => (
               <img
                 {...props}
-                className="my-8 aspect-video w-full rounded-lg border border-slate-200 bg-slate-100 object-cover shadow-sm"
+                className="block aspect-video w-full rounded-lg object-contain min-w-[680px] md:min-w-0"
                 loading="eager"
                 src={resolveLessonImageSrc(src)}
                 alt={alt ?? ''}
