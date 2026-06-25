@@ -20,7 +20,7 @@
   </g>
   <g filter="url(#panelShadow)">
     <rect x="830" y="102" width="155" height="56" rx="20" fill="#ecfeff" opacity="0.96" stroke="#99f6e4"/>
-    <text x="908" y="139" text-anchor="middle" class="label">1 跑 Skill</text>
+    <text x="908" y="139" text-anchor="middle" class="label">1 跑预审</text>
     <rect x="1012" y="176" width="155" height="56" rx="20" fill="#fff7ed" opacity="0.96" stroke="#fed7aa"/>
     <text x="1090" y="213" text-anchor="middle" class="label">2 查风险</text>
     <rect x="684" y="268" width="170" height="56" rx="20" fill="#eff6ff" opacity="0.96" stroke="#bfdbfe"/>

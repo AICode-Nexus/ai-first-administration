@@ -15,9 +15,9 @@
   <image href="ai-first-workflow-shift.png" width="1400" height="788" preserveAspectRatio="xMidYMid slice"/>
   <rect width="1400" height="788" fill="#f8fafc" opacity="0.08"/>
   <g filter="url(#panelShadow)">
-    <rect x="52" y="48" width="514" height="118" rx="28" fill="#0f172a" opacity="0.74"/>
-    <text x="88" y="98" class="title white">传统行政处理</text>
-    <text x="88" y="137" class="subtitle white">信息散、沟通多、每次从头做</text>
+    <rect x="52" y="48" width="514" height="118" rx="28" fill="#ffffff" opacity="0.94" stroke="#cbd5e1"/>
+    <text x="88" y="98" class="title">传统行政处理</text>
+    <text x="88" y="137" class="subtitle">信息散、沟通多、每次从头做</text>
   </g>
   <g filter="url(#panelShadow)">
     <rect x="744" y="48" width="570" height="118" rx="28" fill="#ffffff" opacity="0.94" stroke="#bfdbfe"/>
