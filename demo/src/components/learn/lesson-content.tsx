@@ -338,6 +338,15 @@ export function LessonContent({ content }: { content: string }) {
                 </a>
               )
             },
+            img: ({ src, alt, ...props }) => (
+              <img
+                {...props}
+                className="my-8 aspect-video w-full rounded-lg border border-slate-200 bg-slate-100 object-cover shadow-sm"
+                loading="lazy"
+                src={src ?? ''}
+                alt={alt ?? ''}
+              />
+            ),
           }}
         >
           {processedContent}

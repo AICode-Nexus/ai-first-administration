@@ -6,12 +6,12 @@ import { getLessonSearchEntries } from './lesson-search.server.ts'
 import { getHighlightParts, searchLessons } from './lesson-search.ts'
 
 test('searchLessons matches administrative preflight content beyond metadata', () => {
-  const results = searchLessons('审批预审', getLessonSearchEntries())
+  const results = searchLessons('变体练习', getLessonSearchEntries())
 
   assert.equal(results.length > 0, true)
   assert.equal(results[0]?.id, 'lesson-ai-first-admin')
   assert.equal(results[0]?.matchType, 'content')
-  assert.match(results[0]?.matchedText ?? '', /审批预审/)
+  assert.match(results[0]?.matchedText ?? '', /变体练习/)
 })
 
 test('getHighlightParts splits matched text with case-insensitive highlights', () => {

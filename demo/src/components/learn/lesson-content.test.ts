@@ -19,3 +19,12 @@ test('LessonContent keeps ordered list markers aligned with loose list content',
   assert.match(source, /list-outside list-decimal/)
   assert.match(source, /li:\s*\(\{ children, \.\.\.props \}\)\s*=>/)
 })
+
+test('LessonContent renders markdown images as course illustrations', () => {
+  const filePath = path.join(process.cwd(), 'src/components/learn/lesson-content.tsx')
+  const source = fs.readFileSync(filePath, 'utf8')
+
+  assert.match(source, /img:\s*\(\{ src, alt, \.\.\.props \}\)\s*=>/)
+  assert.match(source, /aspect-video w-full rounded-lg/)
+  assert.match(source, /loading="lazy"/)
+})
