@@ -1,0 +1,16 @@
+# Codex/local
+.codex-switch-snapshot/
+.codex-shared/
+.codex-backups/
+.playwright-mcp/
+
+# Node / Next
+node_modules/
+.next/
+out/
+.env*
+.turbo/
+tsconfig.tsbuildinfo
+
+# macOS
+.DS_Store

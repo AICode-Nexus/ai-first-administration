@@ -1,0 +1,7 @@
+interface:
+  display_name: "行政审批预审"
+  short_description: "行政申请材料预审，生成清单、风险、审批意见和回复草稿"
+  default_prompt: "Use $admin-approval-preflight to review an administrative approval request and draft the checklist, risks, approval note, and applicant message."
+
+policy:
+  allow_implicit_invocation: true
